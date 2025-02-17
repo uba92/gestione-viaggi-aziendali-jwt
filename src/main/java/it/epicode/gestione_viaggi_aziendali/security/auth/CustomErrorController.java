@@ -1,4 +1,4 @@
-package it.epicode.security.auth;
+package it.epicode.gestione_viaggi_aziendali.security.auth;
 
 import org.springframework.boot.web.error.ErrorAttributeOptions;
 import org.springframework.boot.web.servlet.error.ErrorController;

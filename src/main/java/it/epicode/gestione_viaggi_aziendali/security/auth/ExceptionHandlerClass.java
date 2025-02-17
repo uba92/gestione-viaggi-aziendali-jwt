@@ -1,7 +1,7 @@
-package it.epicode.security.auth;
+package it.epicode.gestione_viaggi_aziendali.security.auth;
 
 
-import io.jsonwebtoken.JwtException;
+
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.ConstraintViolation;
@@ -9,14 +9,15 @@ import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-
 import java.util.HashMap;
 import java.util.Map;
 
 @ControllerAdvice
+@Component("securityExceptionHandler")
 public class ExceptionHandlerClass extends ResponseEntityExceptionHandler {
     @ExceptionHandler(value = EntityNotFoundException.class)
     protected ResponseEntity<String> entityNotFound(EntityNotFoundException ex) {

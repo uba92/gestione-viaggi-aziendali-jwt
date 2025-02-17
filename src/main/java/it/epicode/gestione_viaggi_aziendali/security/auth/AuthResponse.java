@@ -1,4 +1,4 @@
-package it.epicode.security.auth;
+package it.epicode.gestione_viaggi_aziendali.security.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

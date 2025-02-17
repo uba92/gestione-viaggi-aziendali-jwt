@@ -1,4 +1,4 @@
-package it.epicode.security.auth;
+package it.epicode.gestione_viaggi_aziendali.security.auth;
 
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
