@@ -26,6 +26,7 @@ public class DipendenteController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
+    @PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
     public DipendenteResponse findById(@PathVariable Long id) {
         return dipendenteService.findById(id);
     }
