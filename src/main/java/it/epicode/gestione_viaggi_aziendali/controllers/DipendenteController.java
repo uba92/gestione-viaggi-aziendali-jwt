@@ -20,6 +20,7 @@ public class DipendenteController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
+    @PreAuthorize("isAuthenticated()")
     public List<DipendenteResponse> findAll() {
         return dipendenteService.findAll();
     }
